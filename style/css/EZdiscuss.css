@@ -1,63 +1,36 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
+.clearfix:after { 
+  content: ""; 
+  display: block; 
+  clear: both;
 }
 
 .shop-wrap {
 	max-width: 1000px;
 	margin: 0 auto;
+}
+
+.shop-wrap div, .shop-wrap span, .shop-wrap iframe,
+.shop-wrap h1, .shop-wrap h2, .shop-wrap h3, .shop-wrap h4, .shop-wrap h5, .shop-wrap h6, .shop-wrap p, .shop-wrap blockquote, .shop-wrap pre,
+.shop-wrap a, .shop-wrap abbr, .shop-wrap big,
+.shop-wrap del, .shop-wrap em, .shop-wrap img,.shop-wrap q, .shop-wrap s, .shop-wrap samp,
+.shop-wrap small, .shop-wrap strike, .shop-wrap strong, .shop-wrap sub, .shop-wrap sup, .shop-wrap tt, .shop-wrap var,
+.shop-wrap b, .shop-wrap u, .shop-wrap i, .shop-wrap center,
+.shop-wrap dl, .shop-wrap dt, .shop-wrap dd, .shop-wrap ol, .shop-wrap ul, .shop-wrap li,
+.shop-wrap fieldset, .shop-wrap form, .shop-wrap label, .shop-wrap legend,
+.shop-wrap section, .shop-wrap summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.shop-wrap a {
+  text-decoration: none;
+}
+.shop-wrap a:hover {
+  text-decoration: underline;
 }
 
 #EZ_comment_box {
@@ -127,7 +100,7 @@ a:hover {
 
 #EZ_comment_box section.EZcomment_renderer_thread .EZcomment_renderer_content {
 	min-height: 48px;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 #EZ_comment_box section.EZcomment_renderer_thread a.username {
@@ -191,7 +164,7 @@ a:hover {
 	line-height: 20px;
 }
 
-#EZ_comment_box #post-btn {
+#EZ_comment_box #use_comment {
 	padding:10px;
 	font-size: 16px;
 	color: #656C7D;
@@ -202,7 +175,7 @@ a:hover {
 	text-align: center;
 }
 
-#EZ_comment_box #post-btn:hover {
+#EZ_comment_box #use_comment:hover {
 	background: #FF6706;
 	border: 1px solid #FF6706;
 	color: #FFF;
@@ -232,17 +205,17 @@ a:hover {
 	border: none;
 }
 
-.form_content {
+#EZ_comment_box .form_content {
 	padding: 5px 20px;
 	margin-left: -10px;
 }
 
-.form_foot {
+#EZ_comment_box .form_foot {
 	width: 100%;
 	padding-top: 10px;
 }
 
-.foot_extext {
+#EZ_comment_box .foot_extext {
 	width: 100%;
     text-align: center;
     margin: 0px auto;
