@@ -13,3 +13,18 @@ $(function(){
   $('.EZcpr_tx').tinyscrollbar();
 
 })
+
+$(document).ready(function() {
+  $('.submit-btns > a').click(function(event) {
+    event.preventDefault();
+    $(this).parent('.submit-btns').css('display', 'none');
+    $('.complete').css('display', 'inline-block');
+    $('.close-btn').css('display', 'none');
+    
+  });
+  $('.close-btn').click(function(event) {
+    /* Act on the event */
+    event.preventDefault();
+    $('.plugin-feedback').hide(400);
+  });
+});

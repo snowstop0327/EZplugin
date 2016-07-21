@@ -146,10 +146,12 @@
 	background-position: -20px 0px;
 }
 
-#EZ_comment_box section.EZcomment_renderer_thread #feedback a.yes:hover {
+#EZ_comment_box section.EZcomment_renderer_thread #feedback a.yes:hover,
+#EZ_comment_box section.EZcomment_renderer_thread #feedback a.yes:focus {
 	background: url(../images/btn_feedback.png) 0 -20px no-repeat;
 }
-#EZ_comment_box section.EZcomment_renderer_thread #feedback a.no:hover {
+#EZ_comment_box section.EZcomment_renderer_thread #feedback a.no:hover,
+#EZ_comment_box section.EZcomment_renderer_thread #feedback a.no:focus {
 	background: url(../images/btn_feedback.png) no-repeat;
 	background-position: -20px -20px;
 }
