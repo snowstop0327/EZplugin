@@ -1733,38 +1733,75 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
 }
 
 .plugin-feedback a.yes,.plugin-feedback a.no {
+  display: inline-block;
   color: #6699cc;
   font-size: 13px;
+  background: url(../images/btn_feedback.png) no-repeat;
+  background-size: 200%;
+  width: 16px;
+  height: 16px;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: -3px 4px;
+}
+
+.plugin-feedback a.yes {
+  background-position: 0 0px;
 }
 
 .plugin-feedback a.no {
-  margin-left: 5px;
-  padding-left: 10px;
-  border-left: 1px solid #9e9485;
+  background-position: -16px 0px;
 }
 
-.plugin-feedback a.no:hover,.plugin-feedback a.yes:hover{
-  text-decoration:underline;
+.plugin-feedback a.yes:hover {
+  background-position: 0px -16px;
 }
+
+.plugin-feedback a.no:hover {
+  background-position: -16px -16px;
+}
+
+// .plugin-feedback a.no {
+//   margin-left: 5px;
+//   padding-left: 10px;
+//   border-left: 1px solid #9e9485;
+// }
+
+// .plugin-feedback a.no:hover,.plugin-feedback a.yes:hover{
+//   text-decoration:underline;
+// }
 
 .plugin-feedback a.close-btn {
   float: right;
   display: inline-block;
+  color: #a1a8b8;
+  //
   width: 16px;
+  //
   height: 16px;
+  //
   margin-right: 5px;
+  //
   text-indent: 100%;
+  //
   overflow: hidden;
+  //
   white-space: nowrap;
+  //
   background: url(../images/btn_feedback.png) no-repeat;
+  //
   background-position: -16px 0px;
+  //
   background-color: #6699cc;
+  //
   background-size: 200%;
 }
 
 .plugin-feedback a.close-btn:hover {
-  background: url(../images/btn_feedback.png) no-repeat;
-  background-position: -16px -16px;
-  background-size: 200%;
-  background-color: #da4a38;
-}
+  // background: url(../images/btn_feedback.png) no-repeat;
+  // background-position: -16px -16px;
+  // background-size: 200%;
+  // background-color: #da4a38;
+  text-decoration:underline;
+}}
