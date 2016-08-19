@@ -1776,26 +1776,7 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
   float: right;
   display: inline-block;
   color: #a1a8b8;
-  //
-  width: 16px;
-  //
-  height: 16px;
-  //
-  margin-right: 5px;
-  //
-  text-indent: 100%;
-  //
-  overflow: hidden;
-  //
-  white-space: nowrap;
-  //
-  background: url(../images/btn_feedback.png) no-repeat;
-  //
-  background-position: -16px 0px;
-  //
-  background-color: #6699cc;
-  //
-  background-size: 200%;
+  width: 50px;
 }
 
 .plugin-feedback a.close-btn:hover {
@@ -1804,4 +1785,57 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
   // background-size: 200%;
   // background-color: #da4a38;
   text-decoration:underline;
-}}
+}
+
+.plugin-feedback form.Suggest-box {
+  /* padding: 5px; */
+  box-sizing: border-box;
+  outline: 0;
+  width: 100%;
+  position: relative;
+  margin: 5px;
+  display: none;
+}
+
+.plugin-feedback form.Suggest-box input {
+  width: 77%;
+  border: 1px solid #5f5f5f;
+  padding: 2px;
+  float: left;
+}
+
+.plugin-feedback form.Suggest-box input.mail-box {
+  width: 210px;
+}
+
+.plugin-feedback form.Suggest-box button {
+  width: 16%;
+  padding: 2px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.plugin-feedback form.Suggest-box button.next-btn {
+  border: 1px solid #5f5f5f;
+  background: #666;
+  color: #fff;
+  float: left;
+}
+
+button.next-btn:hover {
+  opacity: 0.8;
+}
+
+.plugin-feedback form.Suggest-box button.cancel-btn {
+  color: #5f5f5f;
+  border: none;
+  background: none;
+  /* float: left; */
+  font-size: 13px;
+}
+
+button.cancel-btn:hover {
+  text-decoration: underline;
+}

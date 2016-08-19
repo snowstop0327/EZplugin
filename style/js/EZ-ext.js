@@ -15,16 +15,31 @@ $(function(){
 })
 
 $(document).ready(function() {
-  $('.submit-btns > a').click(function(event) {
+  $('.submit-btns > a.yes').click(function(event) {
     event.preventDefault();
-    $(this).parent('.submit-btns').css('display', 'none');
+    $(this).parent('.submit-btns').hide();
     $('.complete').css('display', 'inline-block');
-    $('.close-btn').css('display', 'none');
+    $('.close-btn').hide();
     
   });
   $('.close-btn').click(function(event) {
     /* Act on the event */
     event.preventDefault();
     $('.plugin-feedback').hide(400);
+  });
+  $('.submit-btns > a.no').click(function(event) {
+    event.preventDefault();
+    $('#Suggest-form1').show();
+    $('.submit-btns,.q-text,a.close-btn').hide();
+  });
+  $('#Suggest-form1 > .next-btn').click(function(event) {
+    event.preventDefault();
+    $(this).parent('#Suggest-form1').hide();
+    $('#Suggest-form2').show();
+  });
+  $('#Suggest-form2 > button').click(function(event) {
+    event.preventDefault();
+    $(this).parent('#Suggest-form2').hide();
+    $('.q-text,.complete').css('display', 'inline-block');
   });
 });
