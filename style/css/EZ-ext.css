@@ -1587,9 +1587,9 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
   text-decoration: underline;
   color: #6699cc;
 }
-.clearfix:after { 
-  content: ""; 
-  display: block; 
+.clearfix:after {
+  content: "";
+  display: block;
   clear: both;
 }
 .EZcpr_more:hover {
@@ -1652,7 +1652,7 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
 
 .EZcpr_w .orange-style {
   border: 1px solid #ff6706;
-} 
+}
 
 .EZcpr_w .orange-hd {
   background: #ff6706;
@@ -1787,7 +1787,7 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
   text-decoration:underline;
 }
 
-.plugin-feedback form.Suggest-box {
+.plugin-feedback .Suggest-box {
   /* padding: 5px; */
   box-sizing: border-box;
   outline: 0;
@@ -1797,18 +1797,18 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
   display: none;
 }
 
-.plugin-feedback form.Suggest-box input {
+.plugin-feedback .Suggest-box input {
   width: 77%;
   border: 1px solid #5f5f5f;
   padding: 2px;
   float: left;
 }
 
-.plugin-feedback form.Suggest-box input.mail-box {
+.plugin-feedback .Suggest-box input.mail-box {
   width: 210px;
 }
 
-.plugin-feedback form.Suggest-box button {
+.plugin-feedback .Suggest-box button {
   width: 16%;
   padding: 2px;
   cursor: pointer;
@@ -1817,7 +1817,7 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
   box-sizing: border-box;
 }
 
-.plugin-feedback form.Suggest-box button.next-btn {
+.plugin-feedback .Suggest-box button.next-btn {
   border: 1px solid #5f5f5f;
   background: #666;
   color: #fff;
@@ -1828,7 +1828,7 @@ button.next-btn:hover {
   opacity: 0.8;
 }
 
-.plugin-feedback form.Suggest-box button.cancel-btn {
+.plugin-feedback .Suggest-box button.cancel-btn {
   color: #5f5f5f;
   border: none;
   background: none;

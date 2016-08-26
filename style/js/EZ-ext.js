@@ -20,7 +20,7 @@ $(document).ready(function() {
     $(this).parent('.submit-btns').hide();
     $('.complete').css('display', 'inline-block');
     $('.close-btn').hide();
-    
+
   });
   $('.close-btn').click(function(event) {
     /* Act on the event */
