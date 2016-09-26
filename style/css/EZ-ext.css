@@ -1,6 +1,6 @@
 /* line 1, ../sass/_EZcpr.sass */
 .EZcpr_w {
-  width: 330px;
+  width: 335px;
   margin: 30px 0 45px !important;
   font-size: 13px;
   font-family: Verdana,Arial,Helvetica,sans-serif,"Microsoft JhengHei";
@@ -199,7 +199,7 @@ a.EZcpr_i:first-child._crt .EZcpr_g:before {
   height: 26px;
   line-height: 26px;
   font-size: 13px;
-  padding: 4px 8px !important;
+  padding: 4px 8px 0px 16px !important;
 }
 
 /* line 126, ../sass/_EZcpr.sass */
@@ -207,8 +207,19 @@ a.EZcpr_i:first-child._crt .EZcpr_g:before {
   width: 120px;
   color: #666666;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-overflow: ellipsis;
+  position: relative;
+  // margin-left: 16px;
+}
+
+.EZcpr_location:before {
+  background: url(../images/location.png)no-repeat left;
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0px 3px -3px -16px;
 }
 
 /* line 132, ../sass/_EZcpr.sass */
@@ -711,7 +722,7 @@ a.EZcpr_i:first-child._crt .EZcpr_g:before {
 .EZcpr_ct_btn .transmit_btn{
   background: #aeaeae;
   -webkit-border-radius: 2px;
-  -moz-ÃƒÂ¥Ã¢â‚¬Å¡Ã‚Â³ÃƒÂ©Ã¢â€šÂ¬Ã‚Âborder-radius: 2px;
+  -moz-ÃƒÆ’Ã‚Â¥ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‚Â©ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Âborder-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
@@ -1677,7 +1688,7 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
 }
 
 .EZcpr {
-  width: 325px;
+  width: 100%;
   margin: 20px 0 10px 0;
 }
 
@@ -1698,7 +1709,7 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
   text-decoration: underline;
 }
 
-/* 比價結果意見區 */
+/* æ¯”åƒ¹çµæžœæ„è¦‹å€ */
 
 .plugin-feedback {
   background: #eee;
@@ -1839,3 +1850,73 @@ button.next-btn:hover {
 button.cancel-btn:hover {
   text-decoration: underline;
 }
+
+///////* tooltip *///////////
+
+a.tooltip {
+  outline:none; 
+}
+a.tooltip h3 {
+  font-size: 12px;
+  color: #5f5f5f;
+  line-height: 14px;
+  max-height: 42px;
+  overflow: hidden;
+  margin: 2px;
+}
+a.tooltip img {
+  width: 100px;
+  height: 100px;
+}
+a.tooltip .product-img {
+  background: url(../images/default.png) no-repeat center;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  display: inline-block;
+}
+
+a.tooltip:hover {
+  text-decoration:none;
+} 
+a.tooltip span {
+    z-index:10;
+    display:none;
+    padding: 5px;
+    margin-top:-30px;
+    margin-left:28px;
+    width: 100px;
+    line-height:16px;
+    white-space: initial;
+}
+a.tooltip:hover span {
+  display: inline;
+  position:absolute;
+  color:#111;
+  border:1px solid #656c7d;
+  background:#fff;
+}
+a.tooltip span:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7.5px 13.0px 7.5px 0;
+  border-color: transparent #656c7d transparent transparent;
+  display: inline;
+  /* margin-left: -18px; */
+  position: absolute;
+  left: -13px;
+  top: 38px;
+}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    // box-shadow: 5px 5px 8px #CCC;
+}
+
+
+
+
