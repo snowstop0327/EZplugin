@@ -1858,11 +1858,16 @@ a.tooltip {
 }
 a.tooltip h3 {
   font-size: 12px;
-  color: #5f5f5f;
+  color: #656c7d;
   line-height: 14px;
-  max-height: 42px;
+  max-height: 41px;
   overflow: hidden;
-  margin: 2px;
+  margin: -8px 0 0;
+  font-weight: normal;
+  /* background: #ff6706; */
+  text-align: justify;
+  padding: 2px 5px 2px 5px;
+  border-radius: 0 0 5px 0;
 }
 a.tooltip img {
   width: 100px;
@@ -1874,6 +1879,9 @@ a.tooltip .product-img {
   height: 100px;
   background-size: cover;
   display: inline-block;
+  overflow: hidden;
+  border-radius: 0 5px 0;
+  margin: 5px;
 }
 
 a.tooltip:hover {
@@ -1882,10 +1890,10 @@ a.tooltip:hover {
 a.tooltip span {
     z-index:10;
     display:none;
-    padding: 5px;
+    /* padding: 5px; */
     margin-top:-30px;
-    margin-left:28px;
-    width: 100px;
+    margin-left: 5px;
+    width: 110px;
     line-height:16px;
     white-space: initial;
 }
@@ -1893,8 +1901,9 @@ a.tooltip:hover span {
   display: inline;
   position:absolute;
   color:#111;
-  border:1px solid #656c7d;
-  background:#fff;
+  /* border: 1px solid #fff; */
+  border-left: 5px solid #6699cc;
+  background: #fff;
 }
 a.tooltip span:before {
   content: "";
@@ -1902,21 +1911,22 @@ a.tooltip span:before {
   height: 0;
   border-style: solid;
   border-width: 7.5px 13.0px 7.5px 0;
-  border-color: transparent #656c7d transparent transparent;
+  border-color: transparent #6699cc transparent transparent;
   display: inline;
   /* margin-left: -18px; */
   position: absolute;
-  left: -13px;
-  top: 38px;
+  left: -15px;
+  top: 40px;
 }
     
 /*CSS3 extras*/
 a.tooltip span
 {
-    border-radius:4px;
-    // box-shadow: 5px 5px 8px #CCC;
+    border-radius: 0 5px 5px 0;
+    //
+    box-shadow: 5px 5px 8px #CCC;
+    box-shadow: 1px 1px 5px rgba(0, 3, 0, 0.4);
 }
-
 
 
 
