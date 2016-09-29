@@ -722,7 +722,7 @@ a.EZcpr_i:first-child._crt .EZcpr_g:before {
 .EZcpr_ct_btn .transmit_btn{
   background: #aeaeae;
   -webkit-border-radius: 2px;
-  -moz-ÃƒÆ’Ã‚Â¥ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‚Â©ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Âborder-radius: 2px;
+  -moz-ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â³ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âborder-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
@@ -1709,7 +1709,7 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
   text-decoration: underline;
 }
 
-/* æ¯”åƒ¹çµæžœæ„è¦‹å€ */
+/* Ã¦Â¯â€Ã¥Æ’Â¹Ã§ÂµÂÃ¦Å¾Å“Ã¦â€žÂÃ¨Â¦â€¹Ã¥Ââ‚¬ */
 
 .plugin-feedback {
   background: #eee;
@@ -1902,8 +1902,8 @@ a.tooltip:hover span {
   position:absolute;
   color:#111;
   /* border: 1px solid #fff; */
-  border-left: 5px solid #6699cc;
-  background: #fff;
+  /* border-left: 5px solid #6699cc; */
+  background: #eeeeee;
 }
 a.tooltip span:before {
   content: "";
@@ -1911,18 +1911,18 @@ a.tooltip span:before {
   height: 0;
   border-style: solid;
   border-width: 7.5px 13.0px 7.5px 0;
-  border-color: transparent #6699cc transparent transparent;
+  border-color: transparent #eee transparent transparent;
   display: inline;
   /* margin-left: -18px; */
   position: absolute;
-  left: -15px;
+  left: -13px;
   top: 40px;
 }
     
 /*CSS3 extras*/
 a.tooltip span
 {
-    border-radius: 0 5px 5px 0;
+    border-radius: 4px;
     //
     box-shadow: 5px 5px 8px #CCC;
     box-shadow: 1px 1px 5px rgba(0, 3, 0, 0.4);
