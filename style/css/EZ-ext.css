@@ -1880,7 +1880,7 @@ a.tooltip .product-img {
   background-size: cover;
   display: inline-block;
   overflow: hidden;
-  border-radius: 0 5px 0;
+  border-radius: 5px 5px 0 0;
   margin: 5px;
 }
 
