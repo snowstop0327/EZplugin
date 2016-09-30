@@ -1874,10 +1874,10 @@ a.tooltip img {
   height: 100px;
 }
 a.tooltip .product-img {
-  background: url(../images/default.png) no-repeat center;
+  // background: url(../images/default.png) no-repeat center;
   width: 100px;
   height: 100px;
-  background-size: cover;
+  // background-size: cover;
   display: inline-block;
   overflow: hidden;
   border-radius: 4px 4px 0 0;
