@@ -1713,7 +1713,8 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
 
 .plugin-feedback {
   background: #eee;
-  padding: 5px 3px;
+  line-height: 27px;
+  height: 27px;
 }
 
 .plugin-feedback span {
