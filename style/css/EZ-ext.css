@@ -214,7 +214,7 @@ a.EZcpr_i:first-child._crt .EZcpr_g:before {
 }
 
 .EZcpr_location:before {
-  background: url(../images/location.png)no-repeat left;
+  background: url('./images/location.png') no-repeat left;
   content: " ";
   display: inline-block;
   width: 16px;
@@ -1854,7 +1854,7 @@ button.cancel-btn:hover {
 ///////* tooltip *///////////
 
 a.tooltip {
-  outline:none; 
+  outline:none;
 }
 a.tooltip h3 {
   font-size: 12px;
@@ -1862,10 +1862,10 @@ a.tooltip h3 {
   line-height: 14px;
   max-height: 41px;
   overflow: hidden;
-  margin: -8px 0 0;
+  margin: 2px 0;
   font-weight: normal;
   /* background: #ff6706; */
-  text-align: justify;
+  text-align: left;
   padding: 2px 5px 2px 5px;
   border-radius: 0 0 5px 0;
 }
@@ -1874,25 +1874,24 @@ a.tooltip img {
   height: 100px;
 }
 a.tooltip .product-img {
-  // background: url(../images/default.png) no-repeat center;
+  background: url("./images/default.png") no-repeat center;
   width: 100px;
   height: 100px;
-  // background-size: cover;
+  background-size: cover;
   display: inline-block;
   overflow: hidden;
   border-radius: 4px 4px 0 0;
-  margin: 5px;
 }
 
 a.tooltip:hover {
   text-decoration:none;
-} 
+}
 a.tooltip span {
     z-index:10;
     display:none;
-    /* padding: 5px; */
+    padding: 5px;
     margin-top:-30px;
-    margin-left: 5px;
+    margin-left: 7px;
     width: 110px;
     line-height:16px;
     white-space: initial;
@@ -1918,15 +1917,32 @@ a.tooltip span:before {
   left: -13px;
   top: 40px;
 }
-    
+
 /*CSS3 extras*/
-a.tooltip span
-{
+a.tooltip span {
     border-radius: 4px;
-    //
     box-shadow: 5px 5px 8px #CCC;
     box-shadow: 1px 1px 5px rgba(0, 3, 0, 0.4);
 }
 
 
+.tooltip-table {
+    display: table;
+    position: initial;
+}
 
+a.tooltip-row {
+    box-sizing: border-box;
+    display: table-row;
+    height: 34px;
+    text-decoration: none !important;
+}
+
+a.tooltip-row .tooltip-col {
+    display: table-cell;
+    border-bottom: 1px solid #eee;
+}
+
+a.tooltip-row:last-child .tooltip-col {
+    border-bottom: 0;
+}
