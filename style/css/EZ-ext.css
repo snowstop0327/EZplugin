@@ -1745,20 +1745,24 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
 
 .plugin-feedback a.yes,.plugin-feedback a.no {
   display: inline-block;
-  color: #6699cc;
+  color: #fff;
   font-size: 13px;
-  background: url(../images/btn_feedback.png) no-repeat;
+  /* background: url(../images/btn_feedback.png) no-repeat; */
   background-size: 200%;
   width: 16px;
   height: 16px;
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: -3px 4px;
+  /* text-indent: 100%; */
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+  margin: -4px 4px;
+  border: 1px solid #6699cc;
+  background: #6699cc;
+  line-height: 16px;
+  padding-left: 2px;
 }
 
 .plugin-feedback a.yes {
-  background-position: 0 0px;
+  /* background-position: 0 0px; */
 }
 
 .plugin-feedback a.no {
@@ -1766,11 +1770,17 @@ a.EZsrchS_i_f_i:hover .EZsrchS_s {
 }
 
 .plugin-feedback a.yes:hover {
-  background-position: 0px -16px;
+  /* background-position: 0px -16px; */
+  background: #55c57b;
+  color: #fff;
+  border: 1px solid #55c57b;
 }
 
 .plugin-feedback a.no:hover {
-  background-position: -16px -16px;
+  /* background-position: -16px -16px; */
+  border: 1px solid #ea3737;
+  background: #ea3737;
+  color: #fff;
 }
 
 // .plugin-feedback a.no {
