@@ -1,0 +1,344 @@
+.EZcpr_w
+  width: 330px
+  margin: 30px 0 45px !important
+  font-size: 13px
+  font-family: Verdana,Arial,Helvetica,sans-serif,"Microsoft JhengHei"
+.EZcpr
+  background-color: #fff
+  border: 1px solid $orange
+  +border-radius(2px)
+  +box-shadow(rgba(255, 124, 6, 0.2) 0 3px 7px)
+  ul.EZcpr_ct
+    position: relative
+    padding: 0
+    margin: 3px 8px 0
+    list-style: none
+    li
+      position: relative
+      .rec_card
+        position: absolute
+        top: 7px
+        z-index: 2
+        text-decoration: none
+        .icon-credit-card
+          &:before
+            font-size: 21px
+            color: $gray
+        &:hover
+          .icon-credit-card
+            &:before
+              color: $yellow-dark
+.EZcpr_hd
+  line-height: 19px
+  padding: 8px !important
+  background: $orange
+  +_clear
+.EZcpr_t
+  float: left
+  display: inline-block
+  height: 20px
+  img.ez_logo
+    max-height: 100%
+.EZcpr_ud
+  float: right
+  font-size: 12px
+  color: #fff
+  margin: 2px 0 0 0
+  white-space: nowrap
+
+.EZcpr_i,
+a.EZcpr_i
+  position: relative
+  display: block
+  height: 34px
+  border-bottom: 1px solid #eee
+  font-size: 0
+  white-space: nowrap
+  line-height: 1em
+  &:hover,
+  &._focus
+    background-color: #f9f9f9
+  &._crt
+    .EZcpr_g
+      position: absolute
+      top: 2px
+      right: -19px
+      font-size: 13px
+      &.tag_e
+        padding: 0
+        width: 76px
+        height: 38px
+        background: url(../images/tag.png) no-repeat 0 -39px
+        background-size: 100%
+        color: #fff
+        span.tag_word
+          display: inline-block
+          line-height: normal
+          margin: 5px 0 0 14px
+      &.tag_c
+        top: 0px
+        padding: 0
+        width: 76px
+        height: 38px
+        background: url(../images/tag.png) no-repeat 0 0
+        background-size: 100%
+        color: $black
+        span.tag_word
+          display: inline-block
+          line-height: normal
+          margin: 5px 0 0 21px
+          &:before
+            float: left
+            margin: 3px 4px 0 -8px
+            font-size: 14px
+.EZcpr_s,
+.EZcpr_p,
+.EZcpr_g
+  position: relative
+  float: left
+  display: inline-block
+  padding: 4px 8px
+  height: 26px
+  line-height: 26px
+  vertical-align: top
+  font-size: 13px
+.EZcpr_s
+  margin: 0 0 0 20px
+  width: 142px
+  color: $gray-dark
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+.EZcpr_p
+  text-align: right
+  width: 56px
+  color: $red
+.EZcpr_ft
+  margin: 8px 0 0 0
+  padding: 8px
+  font-size: 13px
+  color: $orange
+  background-color: rgba(255,117,43,0.13)
+  cursor: pointer
+  text-align: left
+  &:hover
+    background-color: rgba(255,117,43,0.2)
+  .icon-credit-card
+    &:before
+      color: $gray
+      font-size: 20px
+      vertical-align: middle
+.EZcpr_desc
+  width: 100%
+  margin: 5px 0 0 0
+  font-size: 12px
+  line-height: 18px
+  color: #ddd
+  white-space: nowrap
+  transform-origin: 0
+  .desc_text
+    display: inline-block
+    transform-origin: 0
+    +transform(scale(0.83))
+a.tooltip
+  h3
+    margin: 5px 0 0 0
+    max-height: 41px
+    line-height: 14px
+    overflow: hidden
+    color: $gray-dark
+    font-size: 12px
+    white-space: normal
+    text-align: justify
+  .pd_img
+    display: inline-block
+    width: 100px
+    height: 100px
+    overflow: hidden
+    img
+      max-width: 100%
+  span.tooltip_img
+    position: absolute
+    top: -29px
+    right: -115px
+    display: none
+    padding: 5px
+    width: 100px
+    z-index: 10
+    background: #eeeeee
+    @include border-radius(4px)
+    box-shadow: 1px 1px 5px rgba(0, 3, 0, 0.4)
+    &:before
+      position: absolute
+      left: -13px
+      top: 40px
+      content: ""
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 7.5px 13.0px 7.5px 0
+      border-color: transparent #eee transparent transparent
+  &:hover
+    span.tooltip_img
+      display: inline-block
+.EZcpr_btn
+  position: relative
+  margin: 8px 0 0 0
+  +_clear
+  .EZcpr_love,.EZcpr_notice,.EZcpr_detail
+    float: left
+    width: 32.9%
+    height: 40px
+    text-align: center
+    line-height: 40px
+    cursor: pointer
+    font-size: 13px
+    color: $gray
+    text-decoration: none
+    &:hover
+      background-color: #f5f5f5
+  .EZcpr_love
+    border: 1px solid $orange
+    border-radius: 2px 0 0 2px
+    .icon-heart-line
+      &:before
+        font-size: 18px
+        vertical-align: text-bottom
+    .icon-heart-filled
+      &:before
+        font-size: 18px
+        vertical-align: text-bottom
+        color: $red
+  .EZcpr_notice
+    border-top: 1px solid $orange
+    border-bottom: 1px solid $orange
+    .icon-bell-line
+      &:before
+        font-size: 18px
+        vertical-align: text-bottom
+    .icon-bell-filled
+      &:before
+        color: $yellow
+        font-size: 18px
+        vertical-align: text-bottom
+    .notice_dropdown
+      display: none
+    &._click
+      border-bottom: none
+      .notice_dropdown
+        display: inline-block
+        position: absolute
+        top: 42px
+        left: 0px
+        width: 328px
+        background-color: #fff
+        border-right: 1px solid $orange
+        border-left: 1px solid $orange
+        border-bottom: 1px solid $orange
+        z-index: 10
+        border-radius: 0 0 2px 2px
+        +box-shadow(rgba(255, 124, 6, 0.2) 0 3px 7px)
+        .notice_word
+          display: block
+          padding: 5px 8px
+          background-color: #f5f5f5
+          text-align: left
+          color: $orange
+          font-size: 12px
+          line-height: normal
+          .icon-info:before
+            float: left
+            margin: 3px 5px 0 0
+        ul.dropdown_setting
+          margin: 0
+          padding: 0
+          list-style: none
+          text-align: left
+          li
+            position: relative
+            padding: 0 8px 0 8px
+            border-bottom: 1px solid #e8e8e8
+            min-height: 40px
+            &:last-child
+              border-bottom: none
+            .current_price
+              display: inline-block
+              margin: 0 8px 0 0
+            .current_price_num
+              &:before
+                content: "$"
+                padding: 0 3px 0 0
+            .o_spot
+              position: absolute
+              top: 8px
+              display: inline-block
+              width: 6px
+              height: 6px
+              @include border-radius(6px)
+              background-color: $orange
+            .expect_price
+              display: inline-block
+              padding: 0 0 0 6px
+              color: $orange
+            .note_word,.error_word
+              margin: -8px 0 10px 74px
+              display: block
+              line-height: normal
+              font-size: 12px
+            .error_word
+              color: $red
+            .notice_way
+              display: inline-block
+              padding: 0 0 0 6px
+              color: #ff752b
+            .email_way
+              margin: 0 0 15px 7px
+              line-height: normal
+              .email_title
+                display: inline-block
+                margin: 2px 0 0 0
+              .input_email,.input_phone
+                display: none
+              &._show
+                .input_email,.input_phone
+                  display: inline-block
+                  width: 130px
+              .email_error_word
+                margin: 3px 0 0 63px
+                display: inline-block
+                font-size: 12px
+                color: $red
+            .phone_way
+              margin: 0 0 10px 7px
+              .input_phone
+                margin: 0 0 0 9px
+  .EZcpr_detail
+    border: 1px solid $orange
+    border-radius: 0 2px 2px 0
+    .icon-login
+      &:before
+        font-size: 18px
+        vertical-align: text-bottom
+.EZcpr_feeback
+  padding: 0 8px
+  height: 40px
+  line-height: 40px
+  background-color: #f5f5f5
+  color: $gray
+  font-size: 12px
+  +_clear
+  .q_area
+    .link_suggest
+      float: right
+      cursor: pointer
+      text-decoration: underline
+  .yes_area,.no_area_form1,.no_area_form2,.no_area
+    display: none
+  .yes_area,.no_area
+    color: $orange
+    .icon-happy:before
+      font-size: 16px
+      vertical-align: text-bottom
+      color: $yellow-dark
+  .no_area_form1,.no_area_form2
+    margin: 7px 0 0 0

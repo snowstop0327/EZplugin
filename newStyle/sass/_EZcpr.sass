@@ -1,0 +1,413 @@
+.EZcpr_w
+  width: 330px
+  margin: 30px 0 45px !important
+  font-size: 13px
+.EZcpr
+  background-color: #fff
+  border: 1px solid #656c7d
+  +border-radius(2px)
+  +box-shadow(rgba(0, 0, 0, 0.125) 0 3px 6px)
+.EZcpr_hd
+  line-height: 19px
+  padding: 8px !important
+  background: #656c7d
+  +_clear
+.EZcpr_t
+  float: left
+  height: 20px
+.EZcpr_udbox
+  width: 24px
+  height: 20px
+  float: left
+  margin-left: 10px
+  background: url('../images/img_ud.png') no-repeat 50% 50%
+  cursor: pointer
+  &:hover
+    .EZcpr_ud
+      display: block
+.EZcpr_ud
+  float: left
+  font-size: 11px
+  color: #fff
+  margin: -30px 0 0 10px
+  padding: 6px 10px
+  white-space: nowrap
+  background: rgba(#363d4c,.8)
+  display: none
+  font-family: Arial,serif
+.EZrpt
+  float: right
+  +_clear
+  a
+    color: #c8cacf
+    text-decoration: none
+    float: left
+    &:hover
+      text-decoration: underline
+  .EZrpt_msg
+    width: 24px
+    height: 19px
+    background: url(../images/img_msg.png) no-repeat 50% 0
+    display: block
+    float: right
+    margin-left: 5px
+    margin-top: 1px
+    cursor: pointer
+    &:hover
+      background: url(../images/img_msg.png) no-repeat 50% 100%
+    &._on
+      background: url(../images/img_msg.png) no-repeat 50% 100%
+
+.EZcpr_ct
+  margin: 8px 8px 0 !important
+  position: relative
+  input[type=text]
+    color: #6f6f6f
+    line-height: 1.6
+    padding: 2px 3px
+  ._int
+    width: calc(100% - 16px)
+  &._art, &._msg
+    &:before
+      content: ''
+      width: 10px
+      height: 5px
+      display: block
+      float: right
+      margin-top: -12px
+      background: url(../images/img_art.png) no-repeat 0 0
+  &._art
+    &:before
+      margin-right: 50px
+  &._msg
+    +_clear
+    &:before
+      margin-right: 7px
+
+.EZcpr_i,
+a.EZcpr_i
+  display: block
+  border-bottom: 1px solid #eee
+  font-size: 0
+  white-space: nowrap
+  line-height: 1em
+  &:hover,
+  &._focus
+    background-color: #f9f9f9
+  &._crt
+    .EZcpr_g
+      color: #da4a38
+      font-weight: bold
+      font-size: 16px
+      &:before
+        content: ''
+        display: inline-block
+        width: 30px
+        height: 32px
+        background: url(../images/EZcpr.png) no-repeat
+        margin: -3px 2px 0 0 !important
+        vertical-align: middle
+  &:first-child._crt .EZcpr_g
+    &:before
+      width: 60px
+      height: 32px
+      background-image: url(../images/EZtop.png)
+      margin: -5px 0 0 !important
+.EZcpr_s,
+.EZcpr_p,
+.EZcpr_g
+  display: inline-block
+  vertical-align: top
+  position: relative
+  height: 26px
+  line-height: 26px
+  font-size: 13px
+  padding: 4px 8px !important
+.EZcpr_s
+  width: 142px
+  color: #666
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+.EZcpr_p
+  text-align: right
+  width: 56px
+  color: #ff6706
+.EZcpr_g
+  text-align: center
+  width: 82px
+  color: #69c
+  padding: 4px 0 !important
+.EZcpr_coupon
+  position: relative
+  height: 0
+  left: 100%
+  top: -29px
+  margin-left: 2px
+.EZcpr_coupon_link
+  position: relative
+  display: inline-block
+  white-space: nowrap
+  line-height: 20px
+  height: 20px
+  width: inherit
+  font-size: 12px
+  background-color: #ff6706 !important
+  color: #fff
+  text-decoration: none
+  padding: 1px 7px
+  +border-radius(5px)
+  +box-shadow(rgba(0,0,0,.35) 0 1px 3px)
+  &:before
+    +fakeArrow(left, #ff6706, 6px)
+    position: absolute
+    left: -5px
+    top: 5px
+  &:hover
+    top: -1px
+    color: #fff
+  &:active
+    top: 0
+.EZcpr_mr
+  position: relative
+  height: 24px
+  &:hover
+    background-color: transparent
+  &:before
+    content: ''
+    display: block
+    width: 2px
+    height: 2px
+    background-color: #bcc1cc
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-top: -1px !important
+    margin-left: -1px !important
+    +box-shadow(#bcc1cc 0 -4px, #bcc1cc 0 4px)
+.EZcpr_ft
+  margin: 8px 8px 3px !important
+  font-size: 12px
+  color: #a1a8b8
+  &:after
+    content: ''
+    display: block
+    clear: both
+  a
+    text-decoration: none
+.EZcpr_h
+  float: left
+  position: relative
+  &:hover
+    .EZcpr_h_bt
+      background-color: #fffdf1
+      border-color: #d4d2c3
+      color: #656c7d
+      &:after
+        border-top-color: #656c7d
+    .EZcpr_h_b
+      display: block
+      background-color: #fffdf1
+      border-color: #d4d2c3
+      +box-shadow(rgba(0, 0, 0, .11) 0 2px 4px)
+.EZcpr_h_bt
+  padding: 4px 6px !important
+  margin-top: -5px !important
+  cursor: pointer
+  background-color: transparent
+  border: 1px solid transparent
+  border-bottom: 0
+  +border-top-radius(2px)
+  position: relative
+  z-index: 2
+  line-height: 14px
+  &:after
+    content: ''
+    display: inline-block
+    height: 0
+    width: 0
+    border-top: 4px solid #a1a8b8
+    border-right: 4px solid transparent
+    border-left: 4px solid transparent
+    vertical-align: middle
+    margin: -2px 0 0 4px !important
+.EZcpr_h_b
+  display: none
+  position: absolute
+  width: 288px
+  padding: 10px 12px !important
+  border: 1px solid transparent
+  top: 17px
+  z-index: 1
+  +border-radius(2px)
+  color: #9e9485
+  line-height: 1.5em
+  &:after
+    content: ''
+    display: block
+    clear: both
+.EZcpr_h_p
+  float: left
+  color: #ff6706
+.EZcpr_h_s
+  color: #9e9485
+.EZcpr_h_dr
+  float: right
+  padding-left: 3em !important
+  position: relative
+.EZcpr_h_drt
+  position: absolute
+  left: 0
+.EZcpr_h_t
+.EZcpr_back
+  float: right
+  width: 82px
+  text-align: center
+  a
+    text-decoration: none !important
+    font-size: 13px !important
+    color: #69c !important
+    &:hover
+      text-decoration: underline !important
+.EZcpr_desc
+  margin: 5px 0 0 4px !important
+  font-size: 12px
+  line-height: 18px
+  color: #ddd
+  white-space: nowrap
+  +transform(scale(0.875))
+
+.EZcpr_msg
+  font-family: Arial,serif
+  font-size: 11px
+  +border-radius(1px)
+  +_clear
+
+.EZcpr_pot
+  float: left
+  width: 40px
+  margin: 0 8px 0 0
+.EZcpr_tex
+  margin-bottom: 4px
+  float: right
+  width: calc(100% - 40px - 8px)
+.EZcpr_nb
+  //border: 1px solid red
+  +_clear
+  span
+    display: block
+    line-height: 20px
+.EZcpr_msg_cls
+  +_clear
+  margin-bottom: 8px
+.EZcpr_msg_cls_btn
+  float: right
+  margin-right: 3px
+  font-size: 11px
+  color: #afaeae
+  cursor: pointer
+  &:hover
+    color: #666
+    
+.EZcpr_nb_n
+  float: left
+  color: #414141
+.EZcpr_nb_t
+  float: left
+  color: #bebebe
+  margin-left: 8px
+.EZcpr_nb_a
+  color: #fff
+  +border-radius(3px)
+  padding: 0 4px
+  float: right
+  &._on
+    background: #ff6706
+  &._fin
+    background: #6b9c56
+
+.EZcpr_tx
+  color: #808080
+  line-height: 1.5
+  margin-top: 6px
+  padding-right: 6px
+  .viewport
+    width: 100%
+    height: 107px
+    overflow: hidden
+    position: relative
+  .overview
+    list-style: none
+    position: absolute
+    left: 0
+    top: 0
+  .scrollbar
+    position: absolute
+    right: 0
+    width: 3px
+    z-index: 500
+  .track
+    background-color: #f3f3f3
+    height: 100%
+    width: 3px
+    position: relative
+  .thumb
+    background-color: #d6d6d6
+    height: 20px
+    width: 3px
+    cursor: pointer
+    overflow: hidden
+    position: absolute
+    top: 0
+  .disable
+    display: none
+
+.EZcpr_ct_t
+  color: #4d4d4d
+  display: block
+  padding: 5px 3px
+  font-family: Arial,serif
+.EZcpr_ct_tb
+  list-style: none
+  margin: 0
+  padding: 0
+  color: #6f6f6f
+  li
+    position: relative
+    line-height: 24px
+    +_clear
+    label
+      position: absolute
+      left: 0
+      top: 0
+      width: calc(100% - 25px)
+      display: block
+      padding-left: 25px
+      cursor: pointer
+    input
+      vertical-align: middle
+      &[type=text]
+        width: 270px
+
+.EZcpr_ct_btn
+  text-align: right
+  margin: 12px 0
+  padding: 0 9px
+  a
+    color: #656c7d
+    margin-right: 10px
+    &:hover
+      color: #474e5d
+  input[type=button]
+    background: #656c7d
+    +border-radius(2px)
+    border: 0
+    color: #fff
+    padding: 4px 10px
+    box-shadow: 0px 1px 2px rgba(0,3,0,.4)
+    cursor: pointer
+    &:hover
+      background: #474e5d
+
+
+

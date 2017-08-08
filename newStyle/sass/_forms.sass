@@ -1,0 +1,321 @@
+::-webkit-scrollbar
+  width: 0px
+  background: transparent
+input[type="text"]
+  padding: 0
+  background-color: transparent
+  border: 0
+  border-bottom: 1px solid #c5c5c5
+  font-size: 13px
+  color: $gray
+  &:focus
+    outline: none
+    border-bottom: 1px solid $orange
+    @include transition(0.2s ease all)
+  &::placeholder
+    color: $gray
+button
+  padding: 0
+  border: none
+  cursor: pointer
+  @include border-radius(2px)
+  &:focus
+    outline: none       
+.EZcpr_btn
+  .EZcpr_notice
+    .notice_dropdown
+      ul.dropdown_setting
+        li
+          .input_price
+            position: relative
+            display: inline-block
+            margin: 0 10px 0 0
+            line-height: normal
+            &:before
+              content: "$"
+            .expect_price_num
+              margin: 0 0 0 -1px
+              padding: 0
+              width: 125px
+              font-family: Verdana
+          .btn_discount
+            padding: 1px 10px
+            background-color: $orange
+            font-size: 16px
+            color: #fff
+            border-bottom: 2px solid #ff5f09
+            &:focus,&:hover
+              outline: none
+              background-color: #ff5f09
+              border-bottom: 2px solid #e04e00
+            &._disabled
+              background-color: #c5c5c5
+              border-bottom: 2px solid $gray
+              cursor: not-allowed
+          .btn_submit
+            display: block
+            margin: 8px 0 3px 0
+            width: 100%
+            height: 35px
+            font-size: 16px
+            color: #fff
+            background-color: $orange
+            &:hover,&:focus
+              background-color: #ff5f09
+.control
+  display: inline-block
+  position: relative
+  padding-left: 24px
+  cursor: pointer
+  font-size: 13px
+  input
+    position: absolute
+    z-index: -1
+    opacity: 0
+.control_indicator
+  position: absolute
+  top: 2px
+  left: 0
+  height: 16px
+  width: 16px
+  border: 1px solid $gray
+  background-color: #fff
+  @include border-radius(2px)
+.control
+  &:hover input ~ .control_indicator
+    border: 1px solid $orange
+    background: #e8e8e8
+  input
+    &:focus ~ .control_indicator
+      border: 1px solid $orange
+      background: #e8e8e8
+    &:checked ~ .control_indicator
+      border: 1px solid $orange
+      background: #fff
+  &:hover input:not([disabled]):checked ~ .control_indicator
+    border: 1px solid $orange
+    background: #fff
+  input
+    &:checked:focus ~ .control_indicator
+      border: 1px solid $orange
+      background: #fff
+.control_indicator:after
+  content: ''
+  position: absolute
+  display: none
+.control input:checked ~ .control_indicator:after
+  display: block
+.control_checkbox .control_indicator:after
+  left: 6px
+  top: 2px
+  width: 3px
+  height: 8px
+  border: solid $orange
+  border-width: 0 2px 2px 0
+  transform: rotate(45deg)
+.EZcpr_feeback
+  .q_area
+    .btn_yes,.btn_no
+      cursor: pointer
+      .icon-happy:before,.icon-sad:before
+        vertical-align: text-bottom
+        font-size: 16px
+      &:hover
+        color: #24A96E
+    .btn_no
+      margin: 0 0 0 5px
+      &:hover
+        color: $red
+  .no_area_form1,.no_area_form2
+    .input_idea
+      float: left
+      width: 230px
+      height: 24px
+      background-color: #fff
+      border: 1px solid #c5c5c5
+      @include border-radius(2px)
+      font-size: 12px
+      &:focus
+        border: 1px solid $orange
+    .btn_next
+      float: left
+      margin: 0 0 0 -2px
+      width: 50px
+      height: 26px
+      background-color: #c5c5c5
+      color: #fff
+      font-size: 12px
+      border-radius: 0 2px 2px 0
+    .btn_pass
+      float: left
+      margin: 0 0 0 8px
+      height: 26px
+      color: #c5c5c5
+      background-color: transparent
+.rec_card_popup
+  .shop_dropdown_area
+    float: left
+    position: relative
+    width: 215px
+    margin: 1px 0 0 15px
+    .marka
+      position: absolute
+      right: 8px
+      top: 10px
+      z-index: 10001
+      cursor: pointer
+      i
+        background: $gray!important
+    .input_choice
+      display: block
+      width: 210px
+      background: transparent
+      border: 0
+      border-bottom: 1px solid #c5c5c5
+      outline: 0
+      color: $gray
+      text-align: left
+      font-size: 20px
+      cursor: pointer
+      text-decoration: none
+      @include transition(all 550ms cubic-bezier(0.19, 1, 0.22, 1))
+      transform-origin: right top
+      -webkit-transform-origin: right top
+      opacity: 1
+      &.open
+        opacity: 0
+    .dropdown_menu
+      position: absolute
+      top: -1em
+      right: 0
+      left: 0
+      z-index: 10000
+      margin: 1em auto
+      padding: 0
+      width: 215px
+      max-height: 210px
+      overflow: hidden
+      overflow-y: scroll
+      list-style: none
+      text-align: left
+      border-radius: 2px
+      background: #fafafa
+      @include transition(all 550ms cubic-bezier(0.19, 1, 0.22, 1))
+      -webkit-transform: scale(0)
+      transform: scale(0)
+      -webkit-transform-origin: right top
+      transform-origin: right top
+      box-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.15), 0 0.1em 0.2em rgba(0, 0, 0, 0.2)
+      li
+        position: relative
+        line-height: 2.35em
+        -webkit-transform: translate3d(0, -10px, 0)
+        transform: translate3d(0, -10px, 0)
+        opacity: 0
+        border-bottom: 1px solid #e8e8e8
+        &:last-child
+          border-bottom: none
+        a
+          display: block
+          padding: 0 1em
+          color: $gray
+          text-decoration: none
+          font-size: 16px
+          &:hover
+            color: $orange
+            background-color: #f5f5f5
+      &.open
+        -webkit-transform: scale(1)
+        transform: scale(1)
+        li
+          -webkit-transition: all 350ms cubic-bezier(0.19, 1, 0.22, 1)
+          transition: all 350ms cubic-bezier(0.19, 1, 0.22, 1)
+          -webkit-transform: translate3d(0, 0, 0)
+          transform: translate3d(0, 0, 0)
+          opacity: 1
+  .bank_dropdown_area,.bank_dropdown_area2,.bank_dropdown_area3
+    float: left
+    position: relative
+    width: 100%
+    .marka
+      position: absolute
+      right: 16px
+      top: 13px
+      z-index: 9999
+      cursor: pointer
+      i
+        background: $gray!important
+    .input_choice
+      display: block
+      padding: 6px 0px 6px 12px
+      background: transparent
+      border: 1px solid #c5c5c5
+      @include border-radius(18px)
+      outline: 0
+      color: $gray
+      text-align: left
+      font-size: 14px
+      cursor: pointer
+      text-decoration: none
+      @include transition(all 550ms cubic-bezier(0.19, 1, 0.22, 1))
+      transform-origin: right top
+      -webkit-transform-origin: right top
+      opacity: 1
+      &.open
+        opacity: 0
+    .dropdown_menu
+      position: absolute
+      top: -1em
+      right: 0
+      left: 0
+      z-index: 5
+      margin: 1em auto
+      padding: 0
+      max-height: 285px
+      overflow: hidden
+      overflow-y: scroll
+      list-style: none
+      text-align: left
+      border-radius: 2px
+      background: #fafafa
+      @include transition(all 550ms cubic-bezier(0.19, 1, 0.22, 1))
+      -webkit-transform: scale(0)
+      transform: scale(0)
+      -webkit-transform-origin: right top
+      transform-origin: right top
+      box-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.15), 0 0.1em 0.2em rgba(0, 0, 0, 0.2)
+      li
+        position: relative
+        line-height: 2.35em
+        -webkit-transform: translate3d(0, -10px, 0)
+        transform: translate3d(0, -10px, 0)
+        opacity: 0
+        border-bottom: 1px solid #e8e8e8
+        &:last-child
+          border-bottom: none
+        a
+          display: block
+          padding: 0 1em
+          color: $gray
+          text-decoration: none
+          font-size: 14px
+          &:hover
+            color: $orange
+            background-color: #f5f5f5
+        .bank_act
+          display: block
+          margin: 0 0 4px 13px
+          max-height: 18px
+          overflow: hidden
+          color: $red
+          font-size: 12px
+          line-height: normal
+      &.open
+        -webkit-transform: scale(1)
+        transform: scale(1)
+        li
+          -webkit-transition: all 350ms cubic-bezier(0.19, 1, 0.22, 1)
+          transition: all 350ms cubic-bezier(0.19, 1, 0.22, 1)
+          -webkit-transform: translate3d(0, 0, 0)
+          transform: translate3d(0, 0, 0)
+          opacity: 1
