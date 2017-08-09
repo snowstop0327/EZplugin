@@ -667,6 +667,7 @@ button:focus {
   background-color: #fff;
   text-decoration: none;
   line-height: initial;
+  width: auto;
 }
 .rec_card_popup .popup_content .popup_bank_area .bank_area ul.rec_list li.bank_rec .bank_rec_link .icon-right-arrow:before {
   float: right;
