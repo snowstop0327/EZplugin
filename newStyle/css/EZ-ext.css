@@ -666,6 +666,7 @@ button:focus {
   border-radius: 2px;
   background-color: #fff;
   text-decoration: none;
+  line-height: initial;
 }
 .rec_card_popup .popup_content .popup_bank_area .bank_area ul.rec_list li.bank_rec .bank_rec_link .icon-right-arrow:before {
   float: right;
@@ -833,6 +834,7 @@ button:focus {
   float: left;
   display: inline-block;
   height: 20px;
+  width: auto;
 }
 .EZcpr_t img.ez_logo {
   max-height: 100%;
@@ -1244,6 +1246,7 @@ form.EZcpr_feeback .q_area .link_suggest {
   float: right;
   cursor: pointer;
   text-decoration: underline;
+  width: auto;
 }
 form.EZcpr_feeback .yes_area, form.EZcpr_feeback .no_area_form1, form.EZcpr_feeback .no_area_form2, form.EZcpr_feeback .no_area {
   display: none;
