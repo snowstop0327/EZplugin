@@ -1101,7 +1101,7 @@ a.tooltip:hover span.tooltip_img {
 .EZcpr_btn .EZcpr_notice._click .notice_dropdown {
   display: inline-block;
   position: absolute;
-  top: 40px;
+  top: 42px;
   left: 0px;
   width: 330px;
   background-color: #fff;
