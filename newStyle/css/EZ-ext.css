@@ -942,7 +942,7 @@ a.EZcpr_i._crt .EZcpr_g.tag_c span.tag_word:before {
   color: #e53331;
 }
 
-.EZcpr_ft {
+.EZcpr .EZcpr_ft {
   margin: 8px 0 0 0;
   padding: 8px;
   font-size: 13px;
@@ -951,10 +951,10 @@ a.EZcpr_i._crt .EZcpr_g.tag_c span.tag_word:before {
   cursor: pointer;
   text-align: left;
 }
-.EZcpr_ft:hover {
+.EZcpr .EZcpr_ft:hover {
   background-color: rgba(255, 117, 43, 0.2);
 }
-.EZcpr_ft .icon-credit-card:before {
+.EZcpr .EZcpr_ft .icon-credit-card:before {
   color: #7f8492;
   font-size: 20px;
   vertical-align: middle;
