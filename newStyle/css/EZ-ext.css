@@ -900,6 +900,7 @@ a.EZcpr_i._crt .EZcpr_g.tag_c span.tag_word {
   display: inline-block;
   line-height: normal;
   margin: 5px 0 0 21px;
+  background: none;
 }
 .EZcpr_i._crt .EZcpr_g.tag_c span.tag_word:before,
 a.EZcpr_i._crt .EZcpr_g.tag_c span.tag_word:before {
@@ -1265,6 +1266,14 @@ form.EZcpr_feeback .no_area_form1, form.EZcpr_feeback .no_area_form2 {
 
 .EZcpr_w .EZcpr_btn {
   margin: 8px 0 0 0;
+}
+
+i.icon, span.icon {
+  vertical-align: initial;
+  margin: 0;
+  width: auto;
+  height: auto;
+  display: initial;
 }
 
 
