@@ -919,7 +919,7 @@ a.EZcpr_i._crt .EZcpr_g.tag_c span.tag_word:before {
 }
 
 .EZcpr_s {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 20px !important;
   width: 142px;
   color: #656c7d;
   white-space: nowrap;
@@ -1030,8 +1030,9 @@ a.tooltip:hover span.tooltip_img {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 42px;
   margin: 8px 0 0 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .EZcpr_btn:after {
   content: "";
@@ -1039,7 +1040,7 @@ a.tooltip:hover span.tooltip_img {
   clear: both;
 }
 .EZcpr_btn .EZcpr_love, .EZcpr_btn .EZcpr_notice, .EZcpr_btn .EZcpr_detail {
-  height: 40px;
+  height: 42px;
   text-align: center;
   line-height: 40px;
   cursor: pointer;
@@ -1101,7 +1102,7 @@ a.tooltip:hover span.tooltip_img {
 .EZcpr_btn .EZcpr_notice._click .notice_dropdown {
   display: inline-block;
   position: absolute;
-  top: 42px;
+  top: 40px;
   left: 0px;
   width: 330px;
   -webkit-box-sizing: boder-box;
@@ -1221,7 +1222,7 @@ a.tooltip:hover span.tooltip_img {
   vertical-align: text-bottom;
 }
 
-.EZcpr_feeback {
+form.EZcpr_feeback {
   padding: 0 8px;
   height: 40px;
   line-height: 40px;
@@ -1230,33 +1231,37 @@ a.tooltip:hover span.tooltip_img {
   font-size: 12px;
   text-align: left;
 }
-.EZcpr_feeback:after {
+form.EZcpr_feeback:after {
   content: "";
   display: table;
   clear: both;
 }
-.EZcpr_feeback .q_area .link_suggest {
+form.EZcpr_feeback .q_area .link_suggest {
   float: right;
   cursor: pointer;
   text-decoration: underline;
 }
-.EZcpr_feeback .yes_area, .EZcpr_feeback .no_area_form1, .EZcpr_feeback .no_area_form2, .EZcpr_feeback .no_area {
+form.EZcpr_feeback .yes_area, form.EZcpr_feeback .no_area_form1, form.EZcpr_feeback .no_area_form2, form.EZcpr_feeback .no_area {
   display: none;
 }
-.EZcpr_feeback .yes_area, .EZcpr_feeback .no_area {
+form.EZcpr_feeback .yes_area, form.EZcpr_feeback .no_area {
   color: #ff752b;
 }
-.EZcpr_feeback .yes_area .icon-happy:before, .EZcpr_feeback .no_area .icon-happy:before {
+form.EZcpr_feeback .yes_area .icon-happy:before, form.EZcpr_feeback .no_area .icon-happy:before {
   font-size: 16px;
   vertical-align: text-bottom;
   color: #ffb700;
 }
-.EZcpr_feeback .no_area_form1, .EZcpr_feeback .no_area_form2 {
+form.EZcpr_feeback .no_area_form1, form.EZcpr_feeback .no_area_form2 {
   margin: 7px 0 0 0;
 }
 
 .EZcpr_ADlink {
   color: #2B81DA;
+}
+
+.EZcpr_w .EZcpr_btn {
+  margin: 8px 0 0 0;
 }
 
 
