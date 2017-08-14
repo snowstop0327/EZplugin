@@ -1079,7 +1079,8 @@ a.tooltip:hover span.tooltip_img {
   flex-shrink: 1;
 }
 .EZcpr_btn .EZcpr_love:hover, .EZcpr_btn .EZcpr_notice:hover, .EZcpr_btn .EZcpr_detail:hover {
-  background-color: #f5f5f5;
+  color: #585858;
+  font-weight: bold;
 }
 .EZcpr_btn .EZcpr_love {
   border: 1px solid #ff752b;
