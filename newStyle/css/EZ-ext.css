@@ -242,26 +242,47 @@ button:focus {
 .EZcpr_feeback .no_area_form1 .input_idea, .EZcpr_feeback .no_area_form2 .input_idea {
   float: left;
   width: 230px;
-  height: 24px;
+  height: 26px;
   background-color: #fff;
   border: 1px solid #c5c5c5;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  border-radius: 2px 0px 0px 2px;
   font-size: 12px;
+  padding: 0 0 0 5px;
+  color: #1e2340;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .EZcpr_feeback .no_area_form1 .input_idea:focus, .EZcpr_feeback .no_area_form2 .input_idea:focus {
   border: 1px solid #ff752b;
 }
+.EZcpr_feeback .no_area_form1 .input_idea:placeholder-shown, .EZcpr_feeback .no_area_form2 .input_idea:placeholder-shown {
+  color: #ff752b;
+}
+.EZcpr_feeback .no_area_form1 .input_idea::-webkit-input-placeholder, .EZcpr_feeback .no_area_form2 .input_idea::-webkit-input-placeholder {
+  color: #ccc;
+}
+.EZcpr_feeback .no_area_form1 .input_idea::-moz-placeholder, .EZcpr_feeback .no_area_form2 .input_idea::-moz-placeholder {
+  color: #ccc;
+}
+.EZcpr_feeback .no_area_form1 .input_idea:-ms-input-placeholder, .EZcpr_feeback .no_area_form2 .input_idea:-ms-input-placeholder {
+  color: #ccc;
+}
+.EZcpr_feeback .no_area_form1 .input_idea::placeholder, .EZcpr_feeback .no_area_form2 .input_idea::placeholder {
+  color: #ccc;
+}
 .EZcpr_feeback .no_area_form1 .btn_next, .EZcpr_feeback .no_area_form2 .btn_next {
   float: left;
-  margin: 0 0 0 -2px;
+  margin: 0;
   width: 50px;
   height: 26px;
   background-color: #c5c5c5;
   color: #fff;
   font-size: 12px;
   border-radius: 0 2px 2px 0;
+  trasition: 0.5s all ease-in;
+}
+.EZcpr_feeback .no_area_form1 .btn_next_submit, .EZcpr_feeback .no_area_form2 .btn_next_submit {
+  background-color: #ff752b;
 }
 .EZcpr_feeback .no_area_form1 .btn_pass, .EZcpr_feeback .no_area_form2 .btn_pass {
   float: left;
@@ -799,6 +820,9 @@ button:focus {
   font-family: Verdana, Arial, Helvetica, sans-serif, "Microsoft JhengHei";
   text-align: left;
 }
+.EZcpr_w a:hover {
+  text-decoration: none;
+}
 
 .EZcpr {
   background-color: #fff;
@@ -827,10 +851,10 @@ button:focus {
 }
 .EZcpr ul.EZcpr_ct li .rec_card .icon-credit-card:before {
   font-size: 21px;
-  color: #7f8492;
+  color: #2b81da;
 }
 .EZcpr ul.EZcpr_ct li .rec_card:hover .icon-credit-card:before {
-  color: #ffb700;
+  color: #ff752b;
 }
 
 .EZcpr_hd {
@@ -969,7 +993,7 @@ a.EZcpr_i._crt .EZcpr_g.tag_c span.tag_word:before {
   background-color: rgba(255, 117, 43, 0.2);
 }
 .EZcpr .EZcpr_ft .icon-credit-card:before {
-  color: #7f8492;
+  color: #656c7d;
   font-size: 20px;
   vertical-align: middle;
 }
@@ -1016,12 +1040,14 @@ a.tooltip .pd_img img {
   max-width: 100%;
 }
 a.tooltip span.tooltip_img {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   top: -29px;
   right: -115px;
   display: none;
   padding: 5px;
-  width: 100px;
+  width: 110px;
   z-index: 10;
   background: #eeeeee;
   -moz-border-radius: 4px;
@@ -1082,6 +1108,10 @@ a.tooltip:hover span.tooltip_img {
 .EZcpr_btn .EZcpr_love:hover, .EZcpr_btn .EZcpr_notice:hover, .EZcpr_btn .EZcpr_detail:hover {
   color: #585858;
   font-weight: bold;
+}
+.EZcpr_btn .EZcpr_love:hover span, .EZcpr_btn .EZcpr_notice:hover span, .EZcpr_btn .EZcpr_detail:hover span {
+  color: #7f8492;
+  font-weight: normal;
 }
 .EZcpr_btn .EZcpr_love {
   border: 1px solid #ff752b;
@@ -1253,6 +1283,7 @@ form.EZcpr_feeback {
   color: #7f8492;
   font-size: 12px;
   text-align: left;
+  margin-bottom: 10px;
 }
 form.EZcpr_feeback:after {
   content: "";
@@ -1297,3 +1328,5 @@ i.icon, span.icon {
 }
 
 
+
+/*# sourceMappingURL=EZ-ext.css.map */
