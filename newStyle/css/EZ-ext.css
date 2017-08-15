@@ -297,6 +297,8 @@ button:focus {
   position: relative;
   width: 215px;
   margin: 1px 0 0 15px;
+  overflow: hidden;
+  height: 32px;
 }
 .rec_card_popup .shop_dropdown_area .marka {
   position: absolute;
@@ -563,6 +565,7 @@ button:focus {
   border: 1px solid #d5d5d5;
   box-shadow: 0 2px 4px #d5d5d5;
   -webkit-box-shadow: 0 2px 4px #d5d5d5;
+  padding: 0;
 }
 .rec_card_popup .popup_content .popup_header {
   padding: 25px 35px;
@@ -1327,6 +1330,8 @@ form.EZcpr_feeback .no_area_form1, form.EZcpr_feeback .no_area_form2 {
 
 .EZcpr_ADlink {
   color: #2B81DA;
+  text-decoration: none;
+  text-decoration: underline;
 }
 
 .EZcpr_w .EZcpr_btn {
@@ -1342,5 +1347,3 @@ i.icon, span.icon {
 }
 
 
-
-/*# sourceMappingURL=EZ-ext.css.map */
