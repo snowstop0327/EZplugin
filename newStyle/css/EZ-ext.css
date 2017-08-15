@@ -611,6 +611,7 @@ button:focus {
   white-space: nowrap;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
+  line-height: 18px;
 }
 .rec_card_popup .popup_content .popup_bank_area {
   padding: 25px 10px 0 10px;
