@@ -297,8 +297,6 @@ button:focus {
   position: relative;
   width: 215px;
   margin: 1px 0 0 15px;
-  overflow: hidden;
-  height: 32px;
 }
 .rec_card_popup .shop_dropdown_area .marka {
   position: absolute;
