@@ -850,7 +850,7 @@ button:focus {
   text-decoration: none;
 }
 .EZcpr ul.EZcpr_ct li .rec_card .icon-credit-card:before {
-  font-size: 21px;
+  font-size: 22px;
   color: #2b81da;
 }
 .EZcpr ul.EZcpr_ct li .rec_card:hover .icon-credit-card:before {
@@ -992,9 +992,13 @@ a.EZcpr_i._crt .EZcpr_g.tag_c span.tag_word:before {
 .EZcpr .EZcpr_ft:hover {
   background-color: rgba(255, 117, 43, 0.2);
 }
+.EZcpr .EZcpr_ft .icon-credit-card {
+  display: inline-block;
+  margin-top: -2px;
+}
 .EZcpr .EZcpr_ft .icon-credit-card:before {
-  color: #656c7d;
-  font-size: 20px;
+  color: #0753eb;
+  font-size: 22px;
   vertical-align: middle;
 }
 
@@ -1028,7 +1032,15 @@ a.tooltip h3 {
   color: #656c7d;
   font-size: 12px;
   white-space: normal;
-  text-align: justify;
+  text-align: left;
+  font-weight: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  overflow: hidden;
 }
 a.tooltip .pd_img {
   display: inline-block;
@@ -1108,10 +1120,12 @@ a.tooltip:hover span.tooltip_img {
 .EZcpr_btn .EZcpr_love:hover, .EZcpr_btn .EZcpr_notice:hover, .EZcpr_btn .EZcpr_detail:hover {
   color: #585858;
   font-weight: bold;
+  font-size: 14px;
 }
 .EZcpr_btn .EZcpr_love:hover span, .EZcpr_btn .EZcpr_notice:hover span, .EZcpr_btn .EZcpr_detail:hover span {
   color: #7f8492;
   font-weight: normal;
+  font-size: 13px;
 }
 .EZcpr_btn .EZcpr_love {
   border: 1px solid #ff752b;
