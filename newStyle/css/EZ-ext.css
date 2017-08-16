@@ -1345,4 +1345,8 @@ i.icon, span.icon {
   display: initial;
 }
 
+.pd_buyinfo {
+  overflow: visible !important;
+}
+
 
